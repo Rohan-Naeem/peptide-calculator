@@ -4,31 +4,31 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://yourdomain.com/</loc>
+        <loc>https://peptide-calculator-virid.vercel.app/</loc>
     </url>
 
     <url>
-        <loc>https://yourdomain.com/peptide-calculator.html</loc>
+        <loc>https://peptide-calculator-virid.vercel.app/peptide-calculator.html</loc>
     </url>
 
     <url>
-        <loc>https://yourdomain.com/guide.html</loc>
+        <loc>https://peptide-calculator-virid.vercel.app/guide.html</loc>
     </url>
 
     <url>
-        <loc>https://yourdomain.com/faq.html</loc>
+        <loc>https://peptide-calculator-virid.vercel.app/faq.html</loc>
     </url>
 
     <url>
-        <loc>https://yourdomain.com/about.html</loc>
+        <loc>https://peptide-calculator-virid.vercel.app/about.html</loc>
     </url>
 
     <url>
-        <loc>https://yourdomain.com/privacy.html</loc>
+        <loc>https://peptide-calculator-virid.vercel.app/privacy.html</loc>
     </url>
 
     <url>
-        <loc>https://yourdomain.com/disclaimer.html</loc>
+        <loc>https://peptide-calculator-virid.vercel.app/disclaimer.html</loc>
     </url>
 
 </urlset>
