@@ -1,0 +1,393 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- =========================================
+         PRIMARY SEO
+    ========================================== -->
+
+    <title>
+        Peptide Calculator | Reconstitution & Dose Calculator
+    </title>
+
+    <meta
+        name="description"
+        content="Use our peptide calculator for mathematical peptide reconstitution, concentration, dose and volume calculations. Get clear results quickly."
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <link
+        rel="canonical"
+        href="https://yourdomain.com/peptide-calculator.html"
+    >
+
+
+    <!-- =========================================
+         FAVICON
+    ========================================== -->
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/favicon.png"
+    >
+
+    <link
+        rel="apple-touch-icon"
+        href="assets/favicon.png"
+    >
+
+
+    <!-- =========================================
+         OPEN GRAPH
+    ========================================== -->
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:title"
+        content="Peptide Calculator | Reconstitution & Dose Calculator"
+    >
+
+    <meta
+        property="og:description"
+        content="Perform peptide-related mathematical calculations involving concentration, volume, reconstitution and related measurements."
+    >
+
+    <meta
+        property="og:url"
+        content="https://yourdomain.com/peptide-calculator.html"
+    >
+
+    <meta
+        property="og:site_name"
+        content="PeptideCalc"
+    >
+
+
+    <!-- =========================================
+         STYLESHEET
+    ========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- TOP BAR -->
+
+    <div class="top-bar">
+
+        <div class="container">
+
+            <span>Peptide Calculation Tool</span>
+
+            <span>Educational & Mathematical Calculator</span>
+
+        </div>
+
+    </div>
+
+
+    <!-- HEADER -->
+
+    <header class="site-header">
+
+        <div class="container header-container">
+
+            <a href="index.html" class="logo">
+    <img src="assets/logo.png" alt="PeptideCalc">
+</a>
+
+            <nav class="main-nav">
+
+                <a href="index.html">Home</a>
+
+                <a href="peptide-calculator.html">
+                    Calculator
+                </a>
+
+                <a href="guide.html">
+                    Guide
+                </a>
+
+                <a href="faq.html">
+                    FAQ
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- CALCULATOR HERO -->
+
+        <section class="calculator-hero">
+
+            <div class="container">
+
+                <span class="section-eyebrow">
+                    ONLINE CALCULATOR
+                </span>
+
+                <h1>
+                    Peptide Calculator
+                </h1>
+
+                <p>
+                    Enter your values below to perform mathematical
+                    peptide-related calculations.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CALCULATOR -->
+
+        <section class="calculator-section">
+
+            <div class="container">
+
+                <div class="calculator-box">
+
+                    <div class="calculator-header">
+
+                        <h2>
+                            Peptide Calculation
+                        </h2>
+
+                        <p>
+                            Enter the required values to calculate the
+                            mathematical result.
+                        </p>
+
+                    </div>
+
+
+                    <form id="peptideCalculatorForm">
+
+                        <div class="form-group">
+
+                            <label for="peptideAmount">
+                                Peptide Amount
+                            </label>
+
+                            <input
+                                type="number"
+                                id="peptideAmount"
+                                name="peptideAmount"
+                                placeholder="Enter peptide amount"
+                                step="any"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="diluentVolume">
+                                Diluent Volume
+                            </label>
+
+                            <input
+                                type="number"
+                                id="diluentVolume"
+                                name="diluentVolume"
+                                placeholder="Enter volume"
+                                step="any"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="desiredAmount">
+                                Desired Amount
+                            </label>
+
+                            <input
+                                type="number"
+                                id="desiredAmount"
+                                name="desiredAmount"
+                                placeholder="Enter desired amount"
+                                step="any"
+                            >
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="primary-btn"
+                        >
+                            Calculate
+                        </button>
+
+                        <button
+                            type="reset"
+                            class="secondary-btn"
+                        >
+                            Reset
+                        </button>
+
+                    </form>
+
+
+                    <!-- RESULT -->
+
+                    <div
+                        id="calculatorResult"
+                        class="calculator-result"
+                    >
+
+                        <h3>
+                            Result
+                        </h3>
+
+                        <p>
+                            Enter your values and click Calculate.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- INFORMATION -->
+
+        <section class="information-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-eyebrow">
+                        UNDERSTANDING THE TOOL
+                    </span>
+
+                    <h2>
+                        How the Calculator Works
+                    </h2>
+
+                </div>
+
+                <p>
+                    The calculator uses mathematical relationships between
+                    quantity, volume and concentration to produce the
+                    requested result.
+                </p>
+
+                <p>
+                    Always verify calculations independently when accuracy
+                    is important and consult an appropriately qualified
+                    professional for medical decisions.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-container">
+
+            <div class="footer-about">
+
+                <a href="index.html" class="logo">
+                    Peptide<span>Calc</span>
+                </a>
+
+                <p>
+                    A simple online peptide calculation and educational
+                    resource.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Pages</h3>
+
+                <a href="index.html">Home</a>
+
+                <a href="guide.html">Guide</a>
+
+                <a href="faq.html">FAQ</a>
+
+                <a href="about.html">About</a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Legal</h3>
+
+                <a href="privacy.html">
+                    Privacy Policy
+                </a>
+
+                <a href="disclaimer.html">
+                    Disclaimer
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 PeptideCalc. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
