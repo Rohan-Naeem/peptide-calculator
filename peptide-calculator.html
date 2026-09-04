@@ -173,119 +173,389 @@
 
         <!-- CALCULATOR -->
 
-        <section class="calculator-section">
+        <!-- CALCULATOR -->
 
-            <div class="container">
+<section class="calculator-section">
 
-                <div class="calculator-box">
+    <div class="container">
 
-                    <div class="calculator-header">
+        <div class="calculator-box">
+
+            <!-- CALCULATOR HEADER -->
+
+            <div class="calculator-header">
+
+                <div class="calculator-title-row">
+
+                    <div>
+                        <span class="calculator-label">
+                            CALCULATION TOOL
+                        </span>
 
                         <h2>
                             Peptide Calculation
                         </h2>
 
                         <p>
-                            Enter the required values to calculate the
-                            mathematical result.
+                            Enter your values below to calculate the result.
                         </p>
-
                     </div>
 
-
-                    <form id="peptideCalculatorForm">
-
-                        <div class="form-group">
-
-                            <label for="peptideAmount">
-                                Peptide Amount
-                            </label>
-
-                            <input
-                                type="number"
-                                id="peptideAmount"
-                                name="peptideAmount"
-                                placeholder="Enter peptide amount"
-                                step="any"
-                            >
-
-                        </div>
-
-
-                        <div class="form-group">
-
-                            <label for="diluentVolume">
-                                Diluent Volume
-                            </label>
-
-                            <input
-                                type="number"
-                                id="diluentVolume"
-                                name="diluentVolume"
-                                placeholder="Enter volume"
-                                step="any"
-                            >
-
-                        </div>
-
-
-                        <div class="form-group">
-
-                            <label for="desiredAmount">
-                                Desired Amount
-                            </label>
-
-                            <input
-                                type="number"
-                                id="desiredAmount"
-                                name="desiredAmount"
-                                placeholder="Enter desired amount"
-                                step="any"
-                            >
-
-                        </div>
-
-
-                        <button
-                            type="submit"
-                            class="primary-btn"
-                        >
-                            Calculate
-                        </button>
-
-                        <button
-                            type="reset"
-                            class="secondary-btn"
-                        >
-                            Reset
-                        </button>
-
-                    </form>
-
-
-                    <!-- RESULT -->
-
-                    <div
-                        id="calculatorResult"
-                        class="calculator-result"
-                    >
-
-                        <h3>
-                            Result
-                        </h3>
-
-                        <p>
-                            Enter your values and click Calculate.
-                        </p>
-
+                    <div class="calculator-status">
+                        <span></span>
+                        Ready
                     </div>
 
                 </div>
 
             </div>
 
-        </section>
 
+            <!-- CALCULATOR FORM -->
+
+            <form id="peptideCalculatorForm">
+
+
+                <!-- =========================
+                     PEPTIDE AMOUNT
+                ========================== -->
+
+                <div class="calculator-input-card">
+
+                    <div class="input-card-top">
+
+                        <div>
+                            <span class="input-step">
+                                01
+                            </span>
+
+                            <label for="peptideAmount">
+                                Peptide Amount
+                            </label>
+                        </div>
+
+                        <span class="input-hint">
+                            Enter vial amount
+                        </span>
+
+                    </div>
+
+
+                    <div class="input-with-unit">
+
+                        <input
+                            type="number"
+                            id="peptideAmount"
+                            name="peptideAmount"
+                            placeholder="0"
+                            step="any"
+                        >
+
+                        <span class="input-unit">
+                            mg
+                        </span>
+
+                    </div>
+
+
+                    <div class="quick-pick-area">
+
+                        <span class="quick-pick-label">
+                            Quick Pick
+                        </span>
+
+                        <div class="quick-picks">
+
+                            <button
+                                type="button"
+                                class="quick-pick"
+                                data-target="peptideAmount"
+                                data-value="2"
+                            >
+                                2 mg
+                            </button>
+
+                            <button
+                                type="button"
+                                class="quick-pick"
+                                data-target="peptideAmount"
+                                data-value="5"
+                            >
+                                5 mg
+                            </button>
+
+                            <button
+                                type="button"
+                                class="quick-pick"
+                                data-target="peptideAmount"
+                                data-value="10"
+                            >
+                                10 mg
+                            </button>
+
+                            <button
+                                type="button"
+                                class="quick-pick"
+                                data-target="peptideAmount"
+                                data-value="15"
+                            >
+                                15 mg
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     DILUENT VOLUME
+                ========================== -->
+
+                <div class="calculator-input-card">
+
+                    <div class="input-card-top">
+
+                        <div>
+                            <span class="input-step">
+                                02
+                            </span>
+
+                            <label for="diluentVolume">
+                                Diluent Volume
+                            </label>
+                        </div>
+
+                        <span class="input-hint">
+                            Enter liquid volume
+                        </span>
+
+                    </div>
+
+
+                    <div class="input-with-unit">
+
+                        <input
+                            type="number"
+                            id="diluentVolume"
+                            name="diluentVolume"
+                            placeholder="0"
+                            step="any"
+                        >
+
+                        <span class="input-unit">
+                            mL
+                        </span>
+
+                    </div>
+
+
+                    <div class="quick-pick-area">
+
+                        <span class="quick-pick-label">
+                            Quick Pick
+                        </span>
+
+                        <div class="quick-picks">
+
+                            <button
+                                type="button"
+                                class="quick-pick"
+                                data-target="diluentVolume"
+                                data-value="1"
+                            >
+                                1 mL
+                            </button>
+
+                            <button
+                                type="button"
+                                class="quick-pick"
+                                data-target="diluentVolume"
+                                data-value="2"
+                            >
+                                2 mL
+                            </button>
+
+                            <button
+                                type="button"
+                                class="quick-pick"
+                                data-target="diluentVolume"
+                                data-value="3"
+                            >
+                                3 mL
+                            </button>
+
+                            <button
+                                type="button"
+                                class="quick-pick"
+                                data-target="diluentVolume"
+                                data-value="5"
+                            >
+                                5 mL
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     DESIRED AMOUNT
+                ========================== -->
+
+                <div class="calculator-input-card">
+
+                    <div class="input-card-top">
+
+                        <div>
+                            <span class="input-step">
+                                03
+                            </span>
+
+                            <label for="desiredAmount">
+                                Desired Amount
+                            </label>
+                        </div>
+
+                        <span class="input-hint">
+                            Enter target amount
+                        </span>
+
+                    </div>
+
+
+                    <div class="input-with-unit">
+
+                        <input
+                            type="number"
+                            id="desiredAmount"
+                            name="desiredAmount"
+                            placeholder="0"
+                            step="any"
+                        >
+
+                        <span class="input-unit">
+                            mcg
+                        </span>
+
+                    </div>
+
+
+                    <div class="quick-pick-area">
+
+                        <span class="quick-pick-label">
+                            Quick Pick
+                        </span>
+
+                        <div class="quick-picks">
+
+                            <button
+                                type="button"
+                                class="quick-pick"
+                                data-target="desiredAmount"
+                                data-value="100"
+                            >
+                                100 mcg
+                            </button>
+
+                            <button
+                                type="button"
+                                class="quick-pick"
+                                data-target="desiredAmount"
+                                data-value="250"
+                            >
+                                250 mcg
+                            </button>
+
+                            <button
+                                type="button"
+                                class="quick-pick"
+                                data-target="desiredAmount"
+                                data-value="500"
+                            >
+                                500 mcg
+                            </button>
+
+                            <button
+                                type="button"
+                                class="quick-pick"
+                                data-target="desiredAmount"
+                                data-value="1000"
+                            >
+                                1000 mcg
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     ACTION BUTTONS
+                ========================== -->
+
+                <div class="calculator-actions">
+
+                    <button
+                        type="submit"
+                        class="primary-btn calculate-btn"
+                    >
+                        Calculate
+                    </button>
+
+                    <button
+                        type="reset"
+                        class="secondary-btn reset-btn"
+                    >
+                        Reset
+                    </button>
+
+                </div>
+
+            </form>
+
+
+            <!-- =========================
+                 RESULT
+            ========================== -->
+
+            <div
+                id="calculatorResult"
+                class="calculator-result"
+            >
+
+                <div class="result-top">
+
+                    <span class="result-icon">
+                        ✓
+                    </span>
+
+                    <span class="result-label">
+                        CALCULATED RESULT
+                    </span>
+
+                </div>
+
+                <h3>
+                    Result
+                </h3>
+
+                <p>
+                    Enter your values and click Calculate.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
         <!-- INFORMATION -->
 

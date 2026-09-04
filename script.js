@@ -1,4 +1,3 @@
-
 /* =========================================================
    PEPTIDE CALC — JAVASCRIPT
    ========================================================= */
@@ -15,6 +14,82 @@ const calculatorForm = document.getElementById(
 const resultBox = document.getElementById(
     "calculatorResult"
 );
+
+
+/* =========================================================
+   QUICK PICK BUTTONS
+   ========================================================= */
+
+const quickPickButtons = document.querySelectorAll(
+    ".quick-pick"
+);
+
+
+quickPickButtons.forEach(function (button) {
+
+    button.addEventListener(
+        "click",
+        function () {
+
+            const targetId =
+                button.getAttribute("data-target");
+
+            const value =
+                button.getAttribute("data-value");
+
+
+            const targetInput =
+                document.getElementById(targetId);
+
+
+            if (!targetInput) {
+                return;
+            }
+
+
+            /* Put selected value into input */
+
+            targetInput.value = value;
+
+
+            /* Remove active state from
+               other buttons for same input */
+
+            quickPickButtons.forEach(
+                function (item) {
+
+                    if (
+                        item.getAttribute("data-target")
+                        === targetId
+                    ) {
+
+                        item.classList.remove(
+                            "active"
+                        );
+
+                    }
+
+                }
+            );
+
+
+            /* Highlight selected button */
+
+            button.classList.add("active");
+
+
+            /* Trigger input event */
+
+            targetInput.dispatchEvent(
+                new Event("input", {
+                    bubbles: true
+                })
+            );
+
+        }
+    );
+
+});
 
 
 /* =========================================================
@@ -109,7 +184,21 @@ if (calculatorForm && resultBox) {
 
             resultBox.innerHTML = `
 
-                <h3>Calculation Result </h3>
+                <div class="result-top">
+
+                    <span class="result-icon">
+                        ✓
+                    </span>
+
+                    <span class="result-label">
+                        CALCULATED RESULT
+                    </span>
+
+                </div>
+
+                <h3>
+                    Calculation Result
+                </h3>
 
                 <p>
                     Concentration:
@@ -149,7 +238,34 @@ if (calculatorForm && resultBox) {
             setTimeout(
                 function () {
 
+                    /* Remove active Quick Picks */
+
+                    quickPickButtons.forEach(
+                        function (button) {
+
+                            button.classList.remove(
+                                "active"
+                            );
+
+                        }
+                    );
+
+
+                    /* Reset result */
+
                     resultBox.innerHTML = `
+
+                        <div class="result-top">
+
+                            <span class="result-icon">
+                                ✓
+                            </span>
+
+                            <span class="result-label">
+                                CALCULATED RESULT
+                            </span>
+
+                        </div>
 
                         <h3>
                             Result
@@ -184,8 +300,20 @@ function showError(message) {
 
     resultBox.innerHTML = `
 
+        <div class="result-top">
+
+            <span class="result-icon">
+                !
+            </span>
+
+            <span class="result-label">
+                CHECK YOUR INPUT
+            </span>
+
+        </div>
+
         <h3>
-            Please Check Your Input 
+            Please Check Your Input
         </h3>
 
         <p>
