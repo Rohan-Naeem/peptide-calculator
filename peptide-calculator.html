@@ -1,663 +1,677 @@
-
 <!DOCTYPE html>
+
 <html lang="en">
-    
+
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <!-- =========================================
-         PRIMARY SEO
-    ========================================== -->
-
-    <title>
-        Peptide Calculator | Reconstitution & Dose Calculator
-    </title>
-
-    <meta
-        name="description"
-        content="Use our peptide calculator for mathematical peptide reconstitution, concentration, dose and volume calculations. Get clear results quickly."
-    >
-
-    <meta
-        name="robots"
-        content="index, follow"
-    >
-
-    <link
-        rel="canonical"
-        href="https://peptide-calculator-virid.vercel.app/peptide-calculator.html"
-    >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <!-- =========================================
-         FAVICON
-    ========================================== -->
+<!-- =========================================
+     PRIMARY SEO
+========================================== -->
 
-    <link
-        rel="icon"
-        type="image/png"
-        href="assets/favicon.png"
-    >
+<title>
+    Peptide Dosage Calculator | Free Reconstitution Calculator
+</title>
 
-    <link
-        rel="apple-touch-icon"
-        href="assets/favicon.png"
-    >
+<meta
+    name="description"
+    content="Use our free peptide dosage calculator for mathematical peptide reconstitution, concentration, dose, volume and dosing calculations. Get clear results quickly."
+>
 
+<meta
+    name="robots"
+    content="index, follow"
+>
 
-    <!-- =========================================
-         OPEN GRAPH
-    ========================================== -->
-
-    <meta
-        property="og:type"
-        content="website"
-    >
-
-    <meta
-        property="og:title"
-        content="Peptide Calculator | Reconstitution & Dose Calculator"
-    >
-
-    <meta
-        property="og:description"
-        content="Perform peptide-related mathematical calculations involving concentration, volume, reconstitution and related measurements."
-    >
-
-    <meta
-        property="og:url"
-        content="https://peptide-calculator-virid.vercel.app/peptide-calculator.html"
-    >
-
-    <meta
-        property="og:site_name"
-        content="PeptideCalc"
-    >
+<link
+    rel="canonical"
+    href="https://peptide-calculator-virid.vercel.app/peptide-calculator.html"
+>
 
 
-    <!-- =========================================
-         STYLESHEET
-    ========================================== -->
+<!-- =========================================
+     FAVICON
+========================================== -->
 
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
+<link
+    rel="icon"
+    type="image/png"
+    href="assets/favicon.png"
+>
+
+<link
+    rel="apple-touch-icon"
+    href="assets/favicon.png"
+>
+
+
+<!-- =========================================
+     OPEN GRAPH
+========================================== -->
+
+<meta
+    property="og:type"
+    content="website"
+>
+
+<meta
+    property="og:title"
+    content="Peptide Dosage Calculator | Free Reconstitution Calculator"
+>
+
+<meta
+    property="og:description"
+    content="Use a free peptide calculator for mathematical calculations involving dosage, reconstitution, concentration, volume and peptide dosing."
+>
+
+<meta
+    property="og:url"
+    content="https://peptide-calculator-virid.vercel.app/peptide-calculator.html"
+>
+
+<meta
+    property="og:site_name"
+    content="PeptideCalc"
+>
+
+
+<!-- =========================================
+     STYLESHEET
+========================================== -->
+
+<link
+    rel="stylesheet"
+    href="style.css"
+>
+
 
 </head>
 
-
 <body>
 
-    <!-- TOP BAR -->
 
-    <div class="top-bar">
+<!-- TOP BAR -->
 
-        <div class="container">
-
-            <span>Peptide Calculation Tool</span>
-
-            <span>Educational & Mathematical Calculator</span>
-
-        </div>
-
-    </div>
-
-
-    <!-- HEADER -->
-
-    <header class="site-header">
-
-        <div class="container header-container">
-
-            <a href="index.html" class="logo">
-    <img src="assets/logo.png" alt="PeptideCalc">
-</a>
-
-            <nav class="main-nav">
-
-                <a href="index.html">Home</a>
-
-                <a href="peptide-calculator.html">
-                    Calculator
-                </a>
-
-                <a href="guide.html">
-                    Guide
-                </a>
-
-                <a href="faq.html">
-                    FAQ
-                </a>
-
-                <a href="about.html">
-                    About
-                </a>
-
-            </nav>
-
-        </div>
-
-    </header>
-
-
-    <main>
-
-        <!-- CALCULATOR HERO -->
-
-        <section class="calculator-hero">
-
-            <div class="container">
-
-                <span class="section-eyebrow">
-                    ONLINE CALCULATOR
-                </span>
-
-                <h1>
-                    Peptide Calculator
-                </h1>
-
-                <p>
-                    Enter your values below to perform mathematical
-                    peptide-related calculations.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- CALCULATOR -->
-
-        <!-- CALCULATOR -->
-
-<section class="calculator-section">
+<div class="top-bar">
 
     <div class="container">
 
-        <div class="calculator-box">
+        <span>Peptide Dosage Calculator</span>
 
-            <!-- CALCULATOR HEADER -->
-
-            <div class="calculator-header">
-
-                <div class="calculator-title-row">
-
-                    <div>
-                        <span class="calculator-label">
-                            CALCULATION TOOL
-                        </span>
-
-                        <h2>
-                            Peptide Calculation
-                        </h2>
-
-                        <p>
-                            Enter your values below to calculate the result.
-                        </p>
-                    </div>
-
-                    <div class="calculator-status">
-                        <span></span>
-                        Ready
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- CALCULATOR FORM -->
-
-            <form id="peptideCalculatorForm">
-
-
-                <!-- =========================
-                     PEPTIDE AMOUNT
-                ========================== -->
-
-                <div class="calculator-input-card">
-
-                    <div class="input-card-top">
-
-                        <div>
-                            <span class="input-step">
-                                01
-                            </span>
-
-                            <label for="peptideAmount">
-                                Peptide Amount
-                            </label>
-                        </div>
-
-                        <span class="input-hint">
-                            Enter vial amount
-                        </span>
-
-                    </div>
-
-
-                    <div class="input-with-unit">
-
-                        <input
-                            type="number"
-                            id="peptideAmount"
-                            name="peptideAmount"
-                            placeholder="0"
-                            step="any"
-                        >
-
-                        <span class="input-unit">
-                            mg
-                        </span>
-
-                    </div>
-
-
-                    <div class="quick-pick-area">
-
-                        <span class="quick-pick-label">
-                            Quick Pick
-                        </span>
-
-                        <div class="quick-picks">
-
-                            <button
-                                type="button"
-                                class="quick-pick"
-                                data-target="peptideAmount"
-                                data-value="2"
-                            >
-                                2 mg
-                            </button>
-
-                            <button
-                                type="button"
-                                class="quick-pick"
-                                data-target="peptideAmount"
-                                data-value="5"
-                            >
-                                5 mg
-                            </button>
-
-                            <button
-                                type="button"
-                                class="quick-pick"
-                                data-target="peptideAmount"
-                                data-value="10"
-                            >
-                                10 mg
-                            </button>
-
-                            <button
-                                type="button"
-                                class="quick-pick"
-                                data-target="peptideAmount"
-                                data-value="15"
-                            >
-                                15 mg
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- =========================
-                     DILUENT VOLUME
-                ========================== -->
-
-                <div class="calculator-input-card">
-
-                    <div class="input-card-top">
-
-                        <div>
-                            <span class="input-step">
-                                02
-                            </span>
-
-                            <label for="diluentVolume">
-                                Diluent Volume
-                            </label>
-                        </div>
-
-                        <span class="input-hint">
-                            Enter liquid volume
-                        </span>
-
-                    </div>
-
-
-                    <div class="input-with-unit">
-
-                        <input
-                            type="number"
-                            id="diluentVolume"
-                            name="diluentVolume"
-                            placeholder="0"
-                            step="any"
-                        >
-
-                        <span class="input-unit">
-                            mL
-                        </span>
-
-                    </div>
-
-
-                    <div class="quick-pick-area">
-
-                        <span class="quick-pick-label">
-                            Quick Pick
-                        </span>
-
-                        <div class="quick-picks">
-
-                            <button
-                                type="button"
-                                class="quick-pick"
-                                data-target="diluentVolume"
-                                data-value="1"
-                            >
-                                1 mL
-                            </button>
-
-                            <button
-                                type="button"
-                                class="quick-pick"
-                                data-target="diluentVolume"
-                                data-value="2"
-                            >
-                                2 mL
-                            </button>
-
-                            <button
-                                type="button"
-                                class="quick-pick"
-                                data-target="diluentVolume"
-                                data-value="3"
-                            >
-                                3 mL
-                            </button>
-
-                            <button
-                                type="button"
-                                class="quick-pick"
-                                data-target="diluentVolume"
-                                data-value="5"
-                            >
-                                5 mL
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- =========================
-                     DESIRED AMOUNT
-                ========================== -->
-
-                <div class="calculator-input-card">
-
-                    <div class="input-card-top">
-
-                        <div>
-                            <span class="input-step">
-                                03
-                            </span>
-
-                            <label for="desiredAmount">
-                                Desired Amount
-                            </label>
-                        </div>
-
-                        <span class="input-hint">
-                            Enter target amount
-                        </span>
-
-                    </div>
-
-
-                    <div class="input-with-unit">
-
-                        <input
-                            type="number"
-                            id="desiredAmount"
-                            name="desiredAmount"
-                            placeholder="0"
-                            step="any"
-                        >
-
-                        <span class="input-unit">
-                            mcg
-                        </span>
-
-                    </div>
-
-
-                    <div class="quick-pick-area">
-
-                        <span class="quick-pick-label">
-                            Quick Pick
-                        </span>
-
-                        <div class="quick-picks">
-
-                            <button
-                                type="button"
-                                class="quick-pick"
-                                data-target="desiredAmount"
-                                data-value="100"
-                            >
-                                100 mcg
-                            </button>
-
-                            <button
-                                type="button"
-                                class="quick-pick"
-                                data-target="desiredAmount"
-                                data-value="250"
-                            >
-                                250 mcg
-                            </button>
-
-                            <button
-                                type="button"
-                                class="quick-pick"
-                                data-target="desiredAmount"
-                                data-value="500"
-                            >
-                                500 mcg
-                            </button>
-
-                            <button
-                                type="button"
-                                class="quick-pick"
-                                data-target="desiredAmount"
-                                data-value="1000"
-                            >
-                                1000 mcg
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- =========================
-                     ACTION BUTTONS
-                ========================== -->
-
-                <div class="calculator-actions">
-
-                    <button
-                        type="submit"
-                        class="primary-btn calculate-btn"
-                    >
-                        Calculate
-                    </button>
-
-                    <button
-                        type="reset"
-                        class="secondary-btn reset-btn"
-                    >
-                        Reset
-                    </button>
-
-                </div>
-
-            </form>
-
-
-            <!-- =========================
-                 RESULT
-            ========================== -->
-
-            <div
-                id="calculatorResult"
-                class="calculator-result"
-            >
-
-                <div class="result-top">
-
-                    <span class="result-icon">
-                        ✓
-                    </span>
-
-                    <span class="result-label">
-                        CALCULATED RESULT
-                    </span>
-
-                </div>
-
-                <h3>
-                    Result
-                </h3>
-
-                <p>
-                    Enter your values and click Calculate.
-                </p>
-
-            </div>
-
-        </div>
+        <span>Educational & Mathematical Calculator</span>
 
     </div>
 
-</section>
-
-        <!-- INFORMATION -->
-
-        <section class="information-section">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <span class="section-eyebrow">
-                        UNDERSTANDING THE TOOL
-                    </span>
-
-                    <h2>
-                        How the Calculator Works
-                    </h2>
-
-                </div>
-
-                <p>
-                    The calculator uses mathematical relationships between
-                    quantity, volume and concentration to produce the
-                    requested result.
-                </p>
-
-                <p>
-                    Always verify calculations independently when accuracy
-                    is important and consult an appropriately qualified
-                    professional for medical decisions.
-                </p>
-
-            </div>
-
-        </section>
-
-    </main>
+</div>
 
 
-    <!-- FOOTER -->
+<!-- HEADER -->
 
-    <footer class="site-footer">
+<header class="site-header">
 
-        <div class="container footer-container">
+    <div class="container header-container">
 
-            <div class="footer-about">
-
-                <a href="index.html" class="logo">
-                    Peptide<span>Calc</span>
-                </a>
-
-                <p>
-                    A simple online peptide calculation and educational
-                    resource.
-                </p>
-
-            </div>
+        <a href="index.html" class="logo">
+<img src="assets/logo.png" alt="PeptideCalc">
 
 
-            <div class="footer-links">
+</a>
 
-                <h3>Pages</h3>
+        <nav class="main-nav">
 
-                <a href="index.html">Home</a>
+            <a href="index.html">Home</a>
 
-                <a href="guide.html">Guide</a>
+            <a href="peptide-calculator.html">
+                Calculator
+            </a>
 
-                <a href="faq.html">FAQ</a>
+            <a href="guide.html">
+                Guide
+            </a>
 
-                <a href="about.html">About</a>
+            <a href="faq.html">
+                FAQ
+            </a>
 
-            </div>
+            <a href="about.html">
+                About
+            </a>
 
+        </nav>
 
-            <div class="footer-links">
+    </div>
 
-                <h3>Legal</h3>
-
-                <a href="privacy.html">
-                    Privacy Policy
-                </a>
-
-                <a href="disclaimer.html">
-                    Disclaimer
-                </a>
-
-            </div>
-
-        </div>
+</header>
 
 
-        <div class="footer-bottom">
+<main>
+
+    <!-- CALCULATOR HERO -->
+
+    <section class="calculator-hero">
+
+        <div class="container">
+
+            <span class="section-eyebrow">
+                FREE PEPTIDE DOSAGE CALCULATOR
+            </span>
+
+            <h1>
+                Peptide Dosage & Reconstitution Calculator
+            </h1>
 
             <p>
-                © 2026 PeptideCalc. All rights reserved.
+                Enter your values below to perform mathematical
+                peptide dosage, reconstitution and concentration
+                calculations.
             </p>
 
         </div>
 
-    </footer>
+    </section>
 
 
-    <script src="script.js"></script>
+    <!-- CALCULATOR -->
+
+
+
+<section class="calculator-section">
+
+
+<div class="container">
+
+    <div class="calculator-box">
+
+        <!-- CALCULATOR HEADER -->
+
+        <div class="calculator-header">
+
+            <div class="calculator-title-row">
+
+                <div>
+                    <span class="calculator-label">
+                        PEPTIDE CALCULATION TOOL
+                    </span>
+
+                    <h2>
+                        Peptide Dosage Calculator
+                    </h2>
+
+                    <p>
+                        Enter your values below to calculate the
+                        mathematical result.
+                    </p>
+                </div>
+
+                <div class="calculator-status">
+                    <span></span>
+                    Ready
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CALCULATOR FORM -->
+
+        <form id="peptideCalculatorForm">
+
+
+            <!-- =========================
+                 PEPTIDE AMOUNT
+            ========================== -->
+
+            <div class="calculator-input-card">
+
+                <div class="input-card-top">
+
+                    <div>
+                        <span class="input-step">
+                            01
+                        </span>
+
+                        <label for="peptideAmount">
+                            Peptide Amount
+                        </label>
+                    </div>
+
+                    <span class="input-hint">
+                        Enter peptide quantity
+                    </span>
+
+                </div>
+
+
+                <div class="input-with-unit">
+
+                    <input
+                        type="number"
+                        id="peptideAmount"
+                        name="peptideAmount"
+                        placeholder="0"
+                        step="any"
+                    >
+
+                    <span class="input-unit">
+                        mg
+                    </span>
+
+                </div>
+
+
+                <div class="quick-pick-area">
+
+                    <span class="quick-pick-label">
+                        Quick Pick
+                    </span>
+
+                    <div class="quick-picks">
+
+                        <button
+                            type="button"
+                            class="quick-pick"
+                            data-target="peptideAmount"
+                            data-value="2"
+                        >
+                            2 mg
+                        </button>
+
+                        <button
+                            type="button"
+                            class="quick-pick"
+                            data-target="peptideAmount"
+                            data-value="5"
+                        >
+                            5 mg
+                        </button>
+
+                        <button
+                            type="button"
+                            class="quick-pick"
+                            data-target="peptideAmount"
+                            data-value="10"
+                        >
+                            10 mg
+                        </button>
+
+                        <button
+                            type="button"
+                            class="quick-pick"
+                            data-target="peptideAmount"
+                            data-value="15"
+                        >
+                            15 mg
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 DILUENT VOLUME
+            ========================== -->
+
+            <div class="calculator-input-card">
+
+                <div class="input-card-top">
+
+                    <div>
+                        <span class="input-step">
+                            02
+                        </span>
+
+                        <label for="diluentVolume">
+                            Diluent Volume
+                        </label>
+                    </div>
+
+                    <span class="input-hint">
+                        Enter reconstitution volume
+                    </span>
+
+                </div>
+
+
+                <div class="input-with-unit">
+
+                    <input
+                        type="number"
+                        id="diluentVolume"
+                        name="diluentVolume"
+                        placeholder="0"
+                        step="any"
+                    >
+
+                    <span class="input-unit">
+                        mL
+                    </span>
+
+                </div>
+
+
+                <div class="quick-pick-area">
+
+                    <span class="quick-pick-label">
+                        Quick Pick
+                    </span>
+
+                    <div class="quick-picks">
+
+                        <button
+                            type="button"
+                            class="quick-pick"
+                            data-target="diluentVolume"
+                            data-value="1"
+                        >
+                            1 mL
+                        </button>
+
+                        <button
+                            type="button"
+                            class="quick-pick"
+                            data-target="diluentVolume"
+                            data-value="2"
+                        >
+                            2 mL
+                        </button>
+
+                        <button
+                            type="button"
+                            class="quick-pick"
+                            data-target="diluentVolume"
+                            data-value="3"
+                        >
+                            3 mL
+                        </button>
+
+                        <button
+                            type="button"
+                            class="quick-pick"
+                            data-target="diluentVolume"
+                            data-value="5"
+                        >
+                            5 mL
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 DESIRED AMOUNT
+            ========================== -->
+
+            <div class="calculator-input-card">
+
+                <div class="input-card-top">
+
+                    <div>
+                        <span class="input-step">
+                            03
+                        </span>
+
+                        <label for="desiredAmount">
+                            Desired Amount
+                        </label>
+                    </div>
+
+                    <span class="input-hint">
+                        Enter target amount
+                    </span>
+
+                </div>
+
+
+                <div class="input-with-unit">
+
+                    <input
+                        type="number"
+                        id="desiredAmount"
+                        name="desiredAmount"
+                        placeholder="0"
+                        step="any"
+                    >
+
+                    <span class="input-unit">
+                        mcg
+                    </span>
+
+                </div>
+
+
+                <div class="quick-pick-area">
+
+                    <span class="quick-pick-label">
+                        Quick Pick
+                    </span>
+
+                    <div class="quick-picks">
+
+                        <button
+                            type="button"
+                            class="quick-pick"
+                            data-target="desiredAmount"
+                            data-value="100"
+                        >
+                            100 mcg
+                        </button>
+
+                        <button
+                            type="button"
+                            class="quick-pick"
+                            data-target="desiredAmount"
+                            data-value="250"
+                        >
+                            250 mcg
+                        </button>
+
+                        <button
+                            type="button"
+                            class="quick-pick"
+                            data-target="desiredAmount"
+                            data-value="500"
+                        >
+                            500 mcg
+                        </button>
+
+                        <button
+                            type="button"
+                            class="quick-pick"
+                            data-target="desiredAmount"
+                            data-value="1000"
+                        >
+                            1000 mcg
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 ACTION BUTTONS
+            ========================== -->
+
+            <div class="calculator-actions">
+
+                <button
+                    type="submit"
+                    class="primary-btn calculate-btn"
+                >
+                    Calculate
+                </button>
+
+                <button
+                    type="reset"
+                    class="secondary-btn reset-btn"
+                >
+                    Reset
+                </button>
+
+            </div>
+
+        </form>
+
+
+        <!-- =========================
+             RESULT
+        ========================== -->
+
+        <div
+            id="calculatorResult"
+            class="calculator-result"
+        >
+
+            <div class="result-top">
+
+                <span class="result-icon">
+                    ✓
+                </span>
+
+                <span class="result-label">
+                    CALCULATED RESULT
+                </span>
+
+            </div>
+
+            <h3>
+                Peptide Calculation Result
+            </h3>
+
+            <p>
+                Enter your values and click Calculate to view the
+                mathematical result.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</section>
+
+
+    <!-- INFORMATION -->
+
+    <section class="information-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-eyebrow">
+                    PEPTIDE CALCULATOR INFORMATION
+                </span>
+
+                <h2>
+                    How the Peptide Dosage Calculator Works
+                </h2>
+
+            </div>
+
+            <p>
+                This peptide calculator uses mathematical relationships
+                between peptide quantity, volume and concentration to
+                produce the requested result. These relationships are
+                commonly used in peptide dosage and reconstitution
+                calculations.
+            </p>
+
+            <p>
+                A peptide reconstitution calculator can help organize
+                mathematical values related to quantity, volume and
+                concentration. Always verify calculations independently
+                when accuracy is important and consult an appropriately
+                qualified professional for medical decisions.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer class="site-footer">
+
+    <div class="container footer-container">
+
+        <div class="footer-about">
+
+            <a href="index.html" class="logo">
+                Peptide<span>Calc</span>
+            </a>
+
+            <p>
+                A free online peptide dosage, dosing and reconstitution
+                calculator for mathematical and educational use.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>Pages</h3>
+
+            <a href="index.html">Home</a>
+
+            <a href="guide.html">Guide</a>
+
+            <a href="faq.html">FAQ</a>
+
+            <a href="about.html">About</a>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>Legal</h3>
+
+            <a href="privacy.html">
+                Privacy Policy
+            </a>
+
+            <a href="disclaimer.html">
+                Disclaimer
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 PeptideCalc. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
 
 </body>
 </html>
