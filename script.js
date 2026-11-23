@@ -197,7 +197,7 @@ if (calculatorForm && resultBox) {
                 </div>
 
                 <h3>
-                    Calculation Result
+                    Results
                 </h3>
 
                 <p>
@@ -268,7 +268,7 @@ if (calculatorForm && resultBox) {
                         </div>
 
                         <h3>
-                            Result
+                            Results
                         </h3>
 
                         <p>
